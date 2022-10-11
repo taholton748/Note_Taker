@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const PORT = process.env.PORT || 3001; // Why can't push to heroku?
 const app = express();
 const [ notes ]= require('./db/db.json');
 
@@ -17,5 +18,5 @@ app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 app.listen(3001, () => {
-    console.log('API server now on port 3001!');
+    console.log(`API server now on port ${PORT}!`);
 });
