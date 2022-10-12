@@ -5,7 +5,7 @@ const fs = require("fs");
 const notes = require("./db/db.json"); // []
 const path = require("path");
 const { v4: uuidv4 } = require("uuid"); // How to use this package
-uuidv4(); // hfshhfsuu-jfjsfs-jjfsjfs-jfjsfs
+// uuidv4();
 
 console.log("PID: ", process.pid);
 
@@ -76,7 +76,6 @@ function findById(id, notesArray) {
 }
 function createNewNote(body, notesArray) {
   console.log(body);
-  // TODO: function's main code will go here
 
   // return finished code to post route for response
   return body;
@@ -98,7 +97,7 @@ app.post("/api/notes", (req, res) => {
 
     fs.writeFile(
       "./db/db.json",
-      JSON.stringify(notes, null, 3), // [] or object
+      JSON.stringify(notes, null, 3),
       function (error, data) {
         if (error) {
           throw new Error("Not able to write note to .json");
@@ -113,6 +112,6 @@ app.post("/api/notes", (req, res) => {
   }
 });
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
 });
