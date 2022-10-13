@@ -21,6 +21,10 @@
   Open application and click "Get started". Add a new note with the add button, input a title and note text, and save the note with the save button. Once a note is saved, it can be retrieved at any time by clicking on its title in the column on the left-hand side of the application.
    <hr>
   
+  ## Deployed Application
+  https://vast-wildwood-34892.herokuapp.com/
+  <hr>
+  
   ![Screen Shot 2022-10-13 at 2 39 15 AM (2)](https://user-images.githubusercontent.com/107539009/195551031-02925ac0-a926-48a4-80d3-d037938857f9.png)
 
   ![Screen Shot 2022-10-13 at 2 31 58 AM (2)](https://user-images.githubusercontent.com/107539009/195551261-7fe5f841-58cb-49e8-a2f0-9519c133bf19.png)
