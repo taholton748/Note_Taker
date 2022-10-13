@@ -2,9 +2,9 @@
 const express = require("express");
 const Joi = require("joi");
 const fs = require("fs");
-const notes = require("./db/db.json"); // []
+const notes = require("./db/db.json");
 const path = require("path");
-const { v4: uuidv4 } = require("uuid"); // How to use this package
+const { v4: uuidv4 } = require("uuid");
 // uuidv4();
 
 console.log("PID: ", process.pid);
